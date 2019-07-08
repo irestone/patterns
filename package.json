@@ -1,0 +1,24 @@
+{
+  "name": "patterns",
+  "version": "1.0.0",
+  "description": "Design Patterns are typical solutions to commonly occurring problems in software design. They are blueprints that can be taken and customized to solve a particular design problem in your code.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/irestone/patterns.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/irestone/patterns/issues"
+  },
+  "homepage": "https://github.com/irestone/patterns#readme",
+  "devDependencies": {
+    "ts-node": "^8.3.0",
+    "typescript": "^3.5.2"
+  }
+}

@@ -5,5 +5,7 @@ Adapter is a structural design pattern that allows objects with incompatible int
 [Conceptual Example](examples/conceptual.ts)
 
 ### Resources
+
 - https://en.wikipedia.org/wiki/Adapter_pattern
 - https://refactoring.guru/design-patterns/adapter
+- https://www.youtube.com/watch?v=2PKQtcJjYvc

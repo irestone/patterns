@@ -7,9 +7,3 @@ then recognize places in your designs and existing applications where you can
 apply them.
 
 Instead of code reuse, with patterns you get experience reuse.
-
-
-
-### Usage
-
-`npx ts-node <pattern>/<example>`

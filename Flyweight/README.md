@@ -95,10 +95,9 @@ The benefit of applying the pattern depends heavily on how and where it’s used
 ## Implementation
 
 1. Divide fields of a class that will become a flyweight into two parts:
+   - the intrinsic state: the fields that contain unchanging data duplicated across many objects
 
-  - the intrinsic state: the fields that contain unchanging data duplicated across many objects
-
-  - the extrinsic state: the fields that contain contextual data unique to each object
+   - the extrinsic state: the fields that contain contextual data unique to each object
 
 2. Leave the fields that represent the intrinsic state in the class, but make sure they’re immutable. They should take their initial values only inside the constructor.
 

@@ -45,7 +45,7 @@ Structural patterns explain how to assemble objects and classes into larger stru
 Behavioral design patterns are concerned with algorithms and the assignment of responsibilities between objects.
 
 - [ ] [**Blackboard**](/Blackboard/README.md)
-- [ ] [**Chain Of Responsibility**](/ChainOfResponsibility/README.md)
+- [ ] [**Chain Of Responsibility**](/ChainOfResponsibility/README.md) lets you pass requests along a chain of handlers. Upon receiving a request, each handler decides either to process the request or to pass it to the next handler in the chain.
 - [ ] [**Command**](/Command/README.md)
 - [ ] [**Interpreter**](/Interpreter/README.md)
 - [ ] [**Iterator**](/Iterator/README.md)

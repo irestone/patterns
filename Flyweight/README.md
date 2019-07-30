@@ -64,6 +64,18 @@ The benefit of applying the pattern depends heavily on how and where it’s used
 - this drains all available RAM on a target device
 - the objects contain duplicate states which can be extracted and shared between multiple objects
 
+## Consequences
+
+### Pros
+
+- You can save lots of RAM, assuming your program has tons of similar objects.
+
+### Cons
+
+- You might be trading RAM over CPU cycles when some of the context data needs to be recalculated each time somebody calls a flyweight method.
+
+- The code becomes much more complicated. New team members will always be wondering why the state of an entity was separated in such a way.
+
 ## Structure, Participants and Collaboration
 
 ![](https://refactoring.guru/images/patterns/diagrams/flyweight/structure.png)
@@ -79,18 +91,6 @@ The benefit of applying the pattern depends heavily on how and where it’s used
 5. The **Client** calculates or stores the extrinsic state of flyweights. From the client’s perspective, a flyweight is a template object which can be configured at runtime by passing some contextual data into parameters of its methods.
 
 6. The **Flyweight Factory** manages a pool of existing flyweights. With the factory, clients don’t create flyweights directly. Instead, they call the factory, passing it bits of the intrinsic state of the desired flyweight. The factory looks over previously created flyweights and either returns an existing one that matches search criteria or creates a new one if nothing is found.
-
-## Consequences
-
-### Pros
-
-- You can save lots of RAM, assuming your program has tons of similar objects.
-
-### Cons
-
-- You might be trading RAM over CPU cycles when some of the context data needs to be recalculated each time somebody calls a flyweight method.
-
-- The code becomes much more complicated. New team members will always be wondering why the state of an entity was separated in such a way.
 
 ## Implementation
 
